@@ -19,9 +19,14 @@
     font-size: $small_text;
     font-weight: $regular;
     color: $bright_color;
+    transition: 0.5s;
 }
 .footer-link {
-    @extend .footer-text
+    @extend .footer-text;
+    font-size: $text;
+}
+.footer-link:hover {
+    color: $muted_color;
 }
 .footer-center-link {
     flex-grow: 1;
@@ -42,4 +47,8 @@
     margin-right: 20px;
     font-size: $small_text;
     color: $bright_color;
+    transition: 0.5s;
+}
+.sm-icon:hover {
+    color: $muted_color;
 }

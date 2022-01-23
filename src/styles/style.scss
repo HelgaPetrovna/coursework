@@ -1,3 +1,12 @@
+@import 'variables';
+
 * {
-    background-color: antiquewhite;
+    background-color: $succes_color;
+}
+
+h1 {
+    font-family: $plex_sans;
+    font-weight: $semi_bold;
+    font-size: $title;
+    color: $bright_color;
 }

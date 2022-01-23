@@ -1,12 +1,8 @@
 @import 'variables';
+@import 'header';
 
 * {
-    background-color: $succes_color;
-}
-
-h1 {
-    font-family: $plex_sans;
-    font-weight: $semi_bold;
-    font-size: $title;
-    color: $bright_color;
+ margin: 0 auto;
+ padding: 0;
+ box-sizing: border-box;
 }

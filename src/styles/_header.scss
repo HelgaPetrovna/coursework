@@ -1,0 +1,63 @@
+.header {
+    max-width: 1440px;
+    height: 880px;
+    background-color: $primary_color;
+    background-image: url(../assets/img/Background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.content_wrapper {
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+.header_content {
+    max-width: 1000px;
+    background-color: $tint_color;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px 60px;
+}
+.header_title {
+    font-family: $plex_sans;
+    font-size: $title;
+    font-weight: $semi_bold;
+    color: $secondary_color;
+    margin-bottom: 40px;
+}
+.header_text_wrapper {
+    max-width: 80%;
+    text-align: center;
+}
+.header_text {
+    font-family: $plex_sans;
+    font-size: $card_title;
+    font-weight: $regular;
+    color: $primary_color;
+    margin-bottom: 50px;
+
+}
+.button {
+    border: none;
+    outline: none;
+    width: 320px;
+    padding: 25px 0;
+    border-radius: 50px;
+    font-family: $plex_sans;
+    font-size: $text;
+    font-weight: $semi_bold;
+    box-shadow: 0 5px 8px $secondary_color;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header_button {
+    background-color: $succes_color;
+    color: $bright_color;
+}
+.header_button:hover {
+    background-color: $accent_color;
+    box-shadow: 0 0 20px 10px $bright_color;
+}

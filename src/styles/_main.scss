@@ -1,6 +1,6 @@
 .main {
     background-color: $primary_color;
-    padding: 150px 0;
+    padding: 125px 0;
     background-image: url(../assets/img/Background_small.png);
     background-repeat: no-repeat;
     background-position: top;
@@ -103,9 +103,9 @@ select {
     background-color: $accent_color;
     box-shadow: 0 0 20px 10px $bright_color;
 }
-#Memorized {
-    display: none;
-}
+// #Memorized {
+//     display: none;
+// }
 .thoughts_item {
     border: 3px solid $muted_color;
     border-radius: 30px;
@@ -144,27 +144,25 @@ select {
 }
 .emotion_tag {
     max-width: 250px;
-    text-align: center;
+    text-align: left;
     font-family: $plex_sans;
     font-size: $small_text;
-    font-weight: $regular;
-    color: $bright_color;
-    padding: 10px;
-    margin: 10px 0 20px 20px;
-    background-color: $warning_color;
+    font-weight: $semi_bold;
+    color: $warning_color;
+    margin: 10px 0 0 20px;
     border-radius: 5px;
 }
 .remember_button {
     display: block;
     border: none;
     outline: none;
-    padding: 15px 20px;
-    margin: 0 auto 30px;
+    padding: 10px 10px;
+    margin: 0 20px 20px auto;
     border-radius: 50px;
     font-family: $plex_sans;
-    font-size: $text;
+    font-size: $small_text;
     font-weight: $semi_bold;
-    box-shadow: 0 5px 8px $secondary_color;
+    // box-shadow: 0 5px 8px $secondary_color;
     background-color: $muted_color;
     color: $bright_color;
     cursor: pointer;

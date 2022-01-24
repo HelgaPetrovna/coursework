@@ -1,3 +1,175 @@
 .main {
+    background-color: $primary_color;
+    padding: 150px 0;
+    background-image: url(../assets/img/Background_small.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.main .content_wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $tint_color;
+    border-radius: 30px;
+    padding: 20px;
+}
+.tab_wrapper {
+    width: 100%;
+}
+.tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.tablinks {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-family: $plex_sans;
+    font-size: $card_title;
+    font-weight: $semi_bold;
+    color: $bright_color;
+    background-color: $shade_color;
+    padding: 20px 0 20px;
+    border-radius: 20px;
+
+}
+.tablinks:active {
+    color: $bright_color;
+    background-color: $primary_color;
+}
+.tabcontent {
+    width: 100%;
+    background-color: $bright_color;
+    border-radius: 20px;
+    padding: 40px 20px;
+}
+.tab_title {
+    font-family: $plex_sans;
+    font-size: $title;
+    font-weight: $semi_bold;
+    color: $secondary_color;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.create_new_form {
+    display: flex;
+    flex-direction: column;
+}
+.form_label {
+    width: 70%;
+    font-family: $plex_sans;
+    font-size: $text;
+    color: $secondary_color;
+    font-weight: $regular;
+    margin-bottom: 10px;
+}
+.form_input, select, textarea {
+    border: 1px solid $secondary_color;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-bottom: 20px;
+    font-family: $plex_sans;
+    font-size: $small_text;
+    font-weight: $regular;
+    color: $secondary_color;
+}
+textarea {
+    height: 100px;
+    overflow: hidden;
+}
+select {
+    margin-bottom: 40px;
+}
+.form_buttom {
+    border: none;
+    outline: none;
+    width: 215px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-family: $plex_sans;
+    font-size: $text;
+    font-weight: $semi_bold;
+    box-shadow: 0 5px 8px $secondary_color;
+    background-color: $succes_color;
+    color: $bright_color;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form_buttom:hover {
+    background-color: $accent_color;
+    box-shadow: 0 0 20px 10px $bright_color;
+}
+#Memorized {
     display: none;
+}
+.thoughts_item {
+    border: 3px solid $muted_color;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.thoughts_background {
+    background-color: $muted_color;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+.card_title {
+    font-family: $plex_sans;
+    font-size: $card_title;
+    font-weight: $semi_bold;
+    color: $bright_color;
+    padding: 0 20px;
+}
+.day {
+    font-family: $plex_sans;
+    font-size: $small_text;
+    font-weight: $regular;
+    color: $secondary_color;
+    padding-left: 20px;
+}
+.thoughts_text {
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: $plex_sans;
+    font-size: $text;
+    font-weight: $regular;
+    color: $primary_color;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.emotion_tag {
+    max-width: 250px;
+    text-align: center;
+    font-family: $plex_sans;
+    font-size: $small_text;
+    font-weight: $regular;
+    color: $bright_color;
+    padding: 10px;
+    margin: 10px 0 20px 20px;
+    background-color: $warning_color;
+    border-radius: 5px;
+}
+.remember_button {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin: 0 auto 30px;
+    border-radius: 50px;
+    font-family: $plex_sans;
+    font-size: $text;
+    font-weight: $semi_bold;
+    box-shadow: 0 5px 8px $secondary_color;
+    background-color: $muted_color;
+    color: $bright_color;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.remember_button:hover {
+    background-color: $accent_color;
 }

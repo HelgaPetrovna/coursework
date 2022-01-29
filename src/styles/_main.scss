@@ -33,11 +33,14 @@
     background-color: $shade_color;
     padding: 20px 0 20px;
     border-radius: 20px;
+    transition: 0.5s;
 
 }
-.tablinks:active {
-    color: $bright_color;
-    background-color: $primary_color;
+.tablinks:hover {
+    background-color: $secondary_color;
+}
+.active {
+    background-color: $muted_color;
 }
 .tabcontent {
     width: 100%;

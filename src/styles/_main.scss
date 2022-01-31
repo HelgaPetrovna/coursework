@@ -1,6 +1,6 @@
 .main {
     background-color: $primary_color;
-    padding: 125px 0;
+    padding: 100px 0;
     background-image: url(../assets/img/Background_small.png);
     background-repeat: no-repeat;
     background-position: top;
@@ -36,9 +36,9 @@
     transition: 0.5s;
 
 }
-.tablinks:hover {
-    background-color: $secondary_color;
-}
+// .tablinks:hover {
+//     background-color: $secondary_color;
+// }
 .active {
     background-color: $muted_color;
 }

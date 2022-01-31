@@ -1,4 +1,12 @@
-import {HeaderComponent} from "../components/header.components"
+import {HeaderComponent} from "../components/header.components";
+import {NavigationComponent} from "../components/navigation.components";
+import {CreateComponent} from "../components/create.components";
+import {FavoritesComponents} from "../components/favorites.components";
+import {ThoughtsComponents} from "../components/thoughts.components";
 
-new HeaderComponent("header");
-// console.log("fuck fuck fuck");
+
+const header = new HeaderComponent("header");
+const navigation = new NavigationComponent("navigation_tabs");
+const create = new CreateComponent("createNew");
+const favorites = new FavoritesComponents("favorites");
+const thought = new ThoughtsComponents("myThoughts");

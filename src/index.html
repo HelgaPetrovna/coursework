@@ -25,22 +25,22 @@
     </header>
     <main class="main" id="main">
         <div class="content_wrapper">
-            <div class="tab_wrapper">
+            <div class="tab_wrapper" id="navigation_tabs">
                 <div class="tab">
                     <button class="tablinks active" onclick="">Create New</button>
                     <button class="tablinks" onclick="">My thoughts</button>
-                    <button class="tablinks" onclick="">Memorized</button>
+                    <button class="tablinks" onclick="">Favorites</button>
                   </div>
             </div>
-            <div class="tabcontent" id="CreateNew">
-                <h2 class="tab_title">Create a new note</h2>
+            <div class="tabcontent" id="createNew">
+                <h2 class="tab_title">Create a new thought</h2>
                 <form class="create_new_form" action="">
                     <label class="form_label" for="createTitle">Title</label>
-                    <input class="form_input" type="text" id="createTitle" value="" placeholder="What happend?">
+                    <input class="form_input" type="text" id="createTitle" value="" placeholder="What is it about?">
                     <label class="form_label" for="yourThoughts">Your thoughts</label>
-                    <textarea name="yourThoughts" id="yourThoughts" cols="30" rows="10" placeholder="What do you think about this?"></textarea>
+                    <textarea name="yourThoughts" id="yourThoughts" cols="30" rows="10" placeholder="Write your thoughts..."></textarea>
                     <select name="yourEmotions" id="yourEmotions">
-                        <option value="selected">Choose emotion</option>
+                        <option value="selected">Choose your emotions</option>
                         <option value="Happy">Happy, optimistic, peaceful</option>
                         <option value="Surprised">Surprised, amazed, exited</option>
                         <option value="Bad">Bad, tired, stressed</option>
@@ -52,7 +52,7 @@
                     <button class="form_buttom" type="submit">Create</button>
                 </form>
             </div>
-            <div class="tabcontent" id="MyThoughts">
+            <div class="tabcontent" id="myThoughts">
                 <div class="thoughts_item">
                     <div class="thoughts_background">
                         <h3 class="card_title">Lorem, ipsum dolor</h3>
@@ -60,10 +60,10 @@
                 <p class="day">22.01.22</p>
                 <div class="thoughts_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, saepe ducimus facere quia minima assumenda earum sit beatae incidunt voluptates suscipit cumque maxime atque quasi ipsum illum, iusto consequatur? Quibusdam pariatur ab mollitia dolores placeat!</div>
                 <div class="emotion_tag">Surprised, amazed, exited</div>
-                <button class="remember_button" id="rememberButtom">Remember this</button>
+                <button class="remember_button" id="rememberButtom">Add to favorite</button>
             </div>
-            <div class="tabcontent" id="Memorized">
-                <h2 class="tab_title">Memorable moments</h2>
+            <div class="tabcontent" id="favorites">
+                <h2 class="tab_title">Favorite thoughts</h2>
             </div>
         </div>
     </main>

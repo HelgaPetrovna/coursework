@@ -5,6 +5,11 @@ export class NavigationComponent extends Component{
         super(id)
 
         this.tabs = []
+
+    }
+
+    registerTabs(tabs) {
+        this.tabs = tabs
     }
 
     init() {
@@ -15,10 +20,17 @@ export class NavigationComponent extends Component{
 
 function tabClickHandler(event) {
 if (event.target.classList.contains('tablinks')) {
-    console.log('Bingo!')
     Array.from(this.$el.querySelectorAll('.tablinks')).forEach((item) => {
         item.classList.remove('active')
     })
     event.target.classList.add('active')
 }
+this.tabs.forEach((tab) => {
+    if (tab.name === event.target.dataset.name) {
+        tab.component.show()
+    } else {
+        tab.component.hide()
+    }
+})
+
 }

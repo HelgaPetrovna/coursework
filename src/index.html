@@ -27,9 +27,9 @@
         <div class="content_wrapper">
             <div class="tab_wrapper" id="navigation_tabs">
                 <div class="tab">
-                    <button class="tablinks active" onclick="">Create New</button>
-                    <button class="tablinks" onclick="">My thoughts</button>
-                    <button class="tablinks" onclick="">Favorites</button>
+                    <button class="tablinks active" data-name="createNew">Create New</button>
+                    <button class="tablinks" data-name="myThoughts">My thoughts</button>
+                    <button class="tablinks" data-name="favorites">Favorites</button>
                   </div>
             </div>
             <div class="tabcontent" id="createNew">
@@ -62,9 +62,10 @@
                 <div class="emotion_tag">Surprised, amazed, exited</div>
                 <button class="remember_button" id="rememberButtom">Add to favorite</button>
             </div>
-            <div class="tabcontent" id="favorites">
-                <h2 class="tab_title">Favorite thoughts</h2>
-            </div>
+
+        </div>
+        <div class="tabcontent" id="favorites">
+            <h2 class="tab_title">Favorite thoughts</h2>
         </div>
     </main>
     <footer class="footer" id="footer">
